@@ -1,0 +1,330 @@
+* {
+    margin: 0;
+    
+}
+
+body {
+    background-color: #eee;
+}
+
+/* ///////// HEADER  //////////////////*/
+#header {
+    width: 100%;
+    height: 12%;
+    display: flex;
+    background-color: beige;
+    top: 0px;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+}
+
+
+#header-img {
+    width: 17%;
+    margin: 0;
+    padding-left: 30px;
+    padding-top: 10px;
+    padding-bottom: 8px;
+}
+
+#nav-bar ul {
+    display: flex;
+    padding: 10px;
+}
+
+li {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5rem;
+    list-style: none;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+a {
+    text-decoration: none; 
+    color: inherit;
+    display: block; 
+    padding: 20px;
+}
+
+a:hover{
+    background-color: rgb(151, 151, 141);
+}
+
+
+#container {
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding-top: 100px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+
+/* ///////// FORM  //////////////////*/
+
+#form{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#form input{
+    font-size: 1rem;
+}
+
+
+
+h2 {
+    font-size: 2.3rem;
+    padding: 50pxpx;
+    color: #000000;
+}
+
+form p {
+    font-size: 1rem;
+}
+
+input[type="email"],
+    input[type="submit"] {
+      width: 55%;
+      padding: 10px;
+      margin: 10px 0;
+      font-size: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+
+    input[type="submit"] {
+      background-color: #d8db29;
+      color: #080808;
+      width: 20%;
+      font-size: 15px;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #d5e030;
+    }
+
+
+/* ///////// RACE  //////////////*/
+
+#race {
+    margin: auto auto;
+    margin-top: 50px;
+    width: 70%;
+    height: 100vh;
+    
+}
+
+.race-item {
+    width: 100%;
+    height: 30%;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.race-item img {
+    width: 20%;
+    height: auto;
+    padding: 10px;
+    Object-fit: cover;
+}
+
+.race-description {
+    width: 70%;
+    padding: 10px;
+    display: block;
+    text-align: justify;
+    background-color: #fff; /* Añadir color de fondo si es necesario */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Añadir sombra para distinguir */
+}
+
+.race-description h3 {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+
+/* ////////////OPENNING//////////*/
+
+#opening h3 {
+    padding-top: 70px;
+    font-size: 1.5rem;
+    padding-bottom: 15px;
+}
+
+/* ////////////FAVS////////////*/
+
+span h3 {
+    font-size: 1.5rem;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+#favs {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se ajusten si hay demasiado contenido */
+    justify-content: center; /* Centra los elementos horizontalmente */
+    align-items: center; /* Centra los elementos verticalmente */
+    gap: 5px; /* Añade espacio entre los elementos */
+    padding-bottom: 100px;
+}
+
+.favs-item {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra el contenido dentro del div */
+    width: 23%; /* Tamaño fijo para cada item */
+    height: auto; /* Ajusta automáticamente la altura */
+    background-color: #d5e030;
+    margin: 5px; /* Espaciado entre elementos */
+    border-radius: 8px; /* Opcional: añade bordes redondeados */
+    overflow: hidden; /* Asegura que el contenido no se desborde */
+}
+
+.favs-item img {
+    width: 100%; /* Ocupa todo el ancho de la pantalla */
+    height: 350px; /* Ocupa todo el alto de la pantalla */
+    object-fit: cover; /* Ajusta la imagen sin distorsionarse */
+}
+
+.favs-item p {
+    display: block; /* Centra el texto dentro del div */
+    margin: 10px 0; /* Espaciado superior e inferior */
+}
+
+
+/* REPONSIVE */
+
+
+@media (max-width: 800px) and (max-height: 800px) {
+    #header {
+      display: block;
+      height: 120px;
+    }
+
+    #header img{
+        width: 100px;
+        padding-right: 10px;
+    }
+    
+    #nav-bar ul {
+        display: block;
+        padding: 0;
+    }
+
+    li{
+        font-size: 20px;
+    }
+
+    a {
+        padding: 0px;
+    }
+
+    #container {
+        padding-top: 150px;
+    }
+
+    #formulario h2 {
+        font-size: 1.7rem;
+    }
+
+    input[type="email"],
+    input[type="submit"] {
+      width: 70%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+
+    input[type="submit"] {
+      background-color: #d8db29;
+      color: #080808;
+      width: 33%;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #d5e21f;
+    }
+    
+        /* ///////// RACE  //////////////*/
+    #race {
+        margin: auto auto;
+        margin-top: 50px;
+        width: 70%;
+        height: auto; /* Cambiar de 100vh a auto */
+    }
+
+    .race-item {
+        width: 100%;
+        margin: 20px 0; /* Añadir margen vertical entre los elementos */
+        display: flex;
+        flex-direction: column; /* Hacer que el contenido se apile verticalmente */
+        align-items: center; /* Centrar el contenido horizontalmente */
+    }
+
+    .race-item img {
+        width: 80%; /* Ajustar el ancho según sea necesario */
+        height: auto; /* Mantener la relación de aspecto */
+        padding: 10px;
+        object-fit: cover;
+    }
+
+    .race-description {
+        width: 100%;
+        padding: 10px 20px; /* Añadir padding */
+        margin: 20px 0; /* Añadir margen */
+        text-align: justify;
+        background-color: #fff; /* Añadir color de fondo si es necesario */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Añadir sombra para distinguir */
+    }
+
+    .race-description h3 {
+        text-align: center;
+    }
+
+    #favs {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .favs-item {
+        width: 70%;
+        padding: 10px;
+        margin: 5px; /* Espaciado entre elementos */
+        border-radius: 8px; /* Opcional: añade bordes redondeados */
+        overflow: hidden; /* Asegura que el contenido no se desborde */
+    }
+
+    .favs-item img {
+        width: 300px; /* Ocupa el 80% del ancho de la pantalla */
+        height: auto; /* Mantiene la relación de aspecto */
+      }
+
+
+      
+}
